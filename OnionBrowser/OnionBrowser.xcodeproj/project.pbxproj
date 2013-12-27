@@ -17,7 +17,6 @@
 		6924C28C155262E2004BE7F9 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6924C28A155262E2004BE7F9 /* SettingsViewController.m */; };
 		6924C28D155262E2004BE7F9 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6924C28B155262E2004BE7F9 /* SettingsViewController.xib */; };
 		6924C29015526343004BE7F9 /* SettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6924C28F15526343004BE7F9 /* SettingsTableViewController.m */; };
-		6928942116F6741000C787B2 /* libcurve25519_donna.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6928942016F6741000C787B2 /* libcurve25519_donna.a */; };
 		692B338C15FAF2E500A23DD5 /* BookmarkEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 692B338B15FAF2E400A23DD5 /* BookmarkEditViewController.m */; };
 		692B86AF153CD4CB000806A9 /* NSData+Conversion.m in Sources */ = {isa = PBXBuildFile; fileRef = 692B86AE153CD4CB000806A9 /* NSData+Conversion.m */; };
 		692E70F717EE3BB10063990F /* Icon-152.png in Resources */ = {isa = PBXBuildFile; fileRef = 692E70F417EE3BB10063990F /* Icon-152.png */; };
@@ -47,16 +46,7 @@
 		697ABCD614FA042C00E1678C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 697ABCD514FA042C00E1678C /* SystemConfiguration.framework */; };
 		697ABCD814FA043300E1678C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 697ABCD714FA043300E1678C /* MobileCoreServices.framework */; };
 		69847C4714F788E100288277 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 69847C3C14F788E100288277 /* libcrypto.a */; };
-		69847C4814F788E100288277 /* libevent_core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 69847C3D14F788E100288277 /* libevent_core.a */; };
-		69847C4914F788E100288277 /* libevent_extra.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 69847C3E14F788E100288277 /* libevent_extra.a */; };
-		69847C4A14F788E100288277 /* libevent_openssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 69847C3F14F788E100288277 /* libevent_openssl.a */; };
-		69847C4B14F788E100288277 /* libevent_pthreads.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 69847C4014F788E100288277 /* libevent_pthreads.a */; };
-		69847C4C14F788E100288277 /* libevent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 69847C4114F788E100288277 /* libevent.a */; };
-		69847C4D14F788E100288277 /* libor-crypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 69847C4214F788E100288277 /* libor-crypto.a */; };
-		69847C4E14F788E100288277 /* libor-event.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 69847C4314F788E100288277 /* libor-event.a */; };
-		69847C4F14F788E100288277 /* libor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 69847C4414F788E100288277 /* libor.a */; };
 		69847C5014F788E100288277 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 69847C4514F788E100288277 /* libssl.a */; };
-		69847C5114F788E100288277 /* libtor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 69847C4614F788E100288277 /* libtor.a */; };
 		69847C5414F788E900288277 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 69847C5314F788E900288277 /* libz.dylib */; };
 		69855E071531576800720327 /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = 69855E061531576800720327 /* about.html */; };
 		6993EB26177EB33800F623CE /* Default-7-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6993EB24177EB33800F623CE /* Default-7-568h@2x.png */; };
@@ -94,7 +84,6 @@
 		6924C28B155262E2004BE7F9 /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 		6924C28E15526343004BE7F9 /* SettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsTableViewController.h; sourceTree = "<group>"; };
 		6924C28F15526343004BE7F9 /* SettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsTableViewController.m; sourceTree = "<group>"; };
-		6928942016F6741000C787B2 /* libcurve25519_donna.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurve25519_donna.a; path = ../dependencies/lib/libcurve25519_donna.a; sourceTree = "<group>"; };
 		692B338A15FAF2E400A23DD5 /* BookmarkEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookmarkEditViewController.h; sourceTree = "<group>"; };
 		692B338B15FAF2E400A23DD5 /* BookmarkEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookmarkEditViewController.m; sourceTree = "<group>"; };
 		692B86AD153CD4CB000806A9 /* NSData+Conversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Conversion.h"; sourceTree = "<group>"; };
@@ -134,16 +123,7 @@
 		697ABCD514FA042C00E1678C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		697ABCD714FA043300E1678C /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		69847C3C14F788E100288277 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = ../dependencies/lib/libcrypto.a; sourceTree = "<group>"; };
-		69847C3D14F788E100288277 /* libevent_core.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libevent_core.a; path = ../dependencies/lib/libevent_core.a; sourceTree = "<group>"; };
-		69847C3E14F788E100288277 /* libevent_extra.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libevent_extra.a; path = ../dependencies/lib/libevent_extra.a; sourceTree = "<group>"; };
-		69847C3F14F788E100288277 /* libevent_openssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libevent_openssl.a; path = ../dependencies/lib/libevent_openssl.a; sourceTree = "<group>"; };
-		69847C4014F788E100288277 /* libevent_pthreads.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libevent_pthreads.a; path = ../dependencies/lib/libevent_pthreads.a; sourceTree = "<group>"; };
-		69847C4114F788E100288277 /* libevent.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libevent.a; path = ../dependencies/lib/libevent.a; sourceTree = "<group>"; };
-		69847C4214F788E100288277 /* libor-crypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libor-crypto.a"; path = "../dependencies/lib/libor-crypto.a"; sourceTree = "<group>"; };
-		69847C4314F788E100288277 /* libor-event.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libor-event.a"; path = "../dependencies/lib/libor-event.a"; sourceTree = "<group>"; };
-		69847C4414F788E100288277 /* libor.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libor.a; path = ../dependencies/lib/libor.a; sourceTree = "<group>"; };
 		69847C4514F788E100288277 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = ../dependencies/lib/libssl.a; sourceTree = "<group>"; };
-		69847C4614F788E100288277 /* libtor.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libtor.a; path = ../dependencies/lib/libtor.a; sourceTree = "<group>"; };
 		69847C5314F788E900288277 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		69855E061531576800720327 /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = about.html; sourceTree = "<group>"; };
 		6993EB24177EB33800F623CE /* Default-7-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-7-568h@2x.png"; path = "art/Default-7-568h@2x.png"; sourceTree = "<group>"; };
@@ -180,17 +160,7 @@
 				696F9EB614F8E21200BC5FDC /* CFNetwork.framework in Frameworks */,
 				69847C5414F788E900288277 /* libz.dylib in Frameworks */,
 				69847C4714F788E100288277 /* libcrypto.a in Frameworks */,
-				69847C4814F788E100288277 /* libevent_core.a in Frameworks */,
-				69847C4914F788E100288277 /* libevent_extra.a in Frameworks */,
-				69847C4A14F788E100288277 /* libevent_openssl.a in Frameworks */,
-				69847C4B14F788E100288277 /* libevent_pthreads.a in Frameworks */,
-				69847C4C14F788E100288277 /* libevent.a in Frameworks */,
-				69847C4D14F788E100288277 /* libor-crypto.a in Frameworks */,
-				69847C4E14F788E100288277 /* libor-event.a in Frameworks */,
-				69847C4F14F788E100288277 /* libor.a in Frameworks */,
 				69847C5014F788E100288277 /* libssl.a in Frameworks */,
-				69847C5114F788E100288277 /* libtor.a in Frameworks */,
-				6928942116F6741000C787B2 /* libcurve25519_donna.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,17 +319,7 @@
 			isa = PBXGroup;
 			children = (
 				69847C3C14F788E100288277 /* libcrypto.a */,
-				69847C3D14F788E100288277 /* libevent_core.a */,
-				69847C3E14F788E100288277 /* libevent_extra.a */,
-				69847C3F14F788E100288277 /* libevent_openssl.a */,
-				69847C4014F788E100288277 /* libevent_pthreads.a */,
-				69847C4114F788E100288277 /* libevent.a */,
-				69847C4214F788E100288277 /* libor-crypto.a */,
-				69847C4314F788E100288277 /* libor-event.a */,
-				6928942016F6741000C787B2 /* libcurve25519_donna.a */,
-				69847C4414F788E100288277 /* libor.a */,
 				69847C4514F788E100288277 /* libssl.a */,
-				69847C4614F788E100288277 /* libtor.a */,
 			);
 			name = External;
 			sourceTree = "<group>";

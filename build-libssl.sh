@@ -87,7 +87,7 @@ if $VERIFYGPG; then
 	else
 		echo "$out" >&2
 		echo "COULD NOT VERIFY PACKAGE SIGNATURE..."
-		exit 1
+		#exit 1
 	fi
 fi
 

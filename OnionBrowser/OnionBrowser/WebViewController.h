@@ -29,7 +29,6 @@
 
 - (void)loadURL: (NSURL *)navigationURL;
 - (void)addressBarCancel;
-- (void)renderTorStatus: (NSString *)statusLine;
 
 - (void)openOptionsMenu;
 - (void)goForward;

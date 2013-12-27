@@ -167,7 +167,7 @@
     // Use tor proxy server
     NSString *hostKey = (NSString *)kCFStreamPropertySOCKSProxyHost;
     NSString *portKey = (NSString *)kCFStreamPropertySOCKSProxyPort;
-    NSUInteger proxyPortNumber = 25;
+    NSUInteger proxyPortNumber = 21;
 
     NSMutableDictionary *proxyToUse = [NSMutableDictionary
                                        dictionaryWithObjectsAndKeys:@"jjproxy.liruqi.info",hostKey,

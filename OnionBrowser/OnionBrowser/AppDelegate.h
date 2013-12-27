@@ -44,7 +44,6 @@
 
 @property (nonatomic) Boolean doPrepopulateBookmarks;
 
-- (void)updateTorrc;
 - (NSURL *)applicationDocumentsDirectory;
 - (void)wipeAppData;
 - (NSUInteger) deviceType;

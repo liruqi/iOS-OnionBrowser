@@ -61,43 +61,9 @@ static const Boolean kBackwardButton = NO;
     self.view = [[UIView alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame]];
 }
 
-- (void)renderTorStatus: (NSString *)statusLine {
-    // TODO: really needs cleanup / prettiness
-    //       (turn into semi-transparent modal with spinner?)
-    UILabel *loadingStatus = (UILabel *)[self.view viewWithTag:kLoadingStatusTag];
-                                                                       
-    _torStatus = [NSString stringWithFormat:@"%@\n%@",
-                  _torStatus, statusLine];
-    NSRange progress_loc = [statusLine rangeOfString:@"BOOTSTRAP PROGRESS="];
-    NSRange progress_r = {
-        progress_loc.location+progress_loc.length,
-        2
-    };
-    NSString *progress_str = @"";
-    if (progress_loc.location != NSNotFound)
-        progress_str = [statusLine substringWithRange:progress_r];
 
-    NSRange summary_loc = [statusLine rangeOfString:@" SUMMARY="];
-    NSString *summary_str = @"";
-    if (summary_loc.location != NSNotFound)
-        summary_str = [statusLine substringFromIndex:summary_loc.location+summary_loc.length+1];
-    NSRange summary_loc2 = [summary_str rangeOfString:@"\""];
-    if (summary_loc2.location != NSNotFound)
-        summary_str = [summary_str substringToIndex:summary_loc2.location];
-
-    NSString *status = [NSString stringWithFormat:@"Connecting… This may take a minute.\n\nIf this takes longer than 60 seconds, please close and re-open the app to try connecting from scratch.\n\nIf this problem persists, you can try connecting via Tor bridges by pressing the \"options\" button below. Visit http://onionbrowser.com/help/ if you need help with bridges or if you continue to have issues.\n\n%@%%\n%@",
-                            progress_str,
-                            summary_str];
-    loadingStatus.text = status;
-   
-}
 
 -(void)loadURL: (NSURL *)navigationURL {
-    // Remove the "connecting..." (initial tor load) overlay if it still exists.
-    UIView *loadingStatus = [self.view viewWithTag:kLoadingStatusTag];
-    if (loadingStatus != nil) {
-        [loadingStatus removeFromSuperview];
-    }
 
     AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
 
@@ -307,20 +273,6 @@ static const Boolean kBackwardButton = NO;
     
     // Since this is first load: set up the overlay "loading..." bit that
     // will display tor initialization status.
-    CGRect screenFrame = [[UIScreen mainScreen] applicationFrame];
-    UILabel *loadingStatus = [[UILabel alloc] initWithFrame:CGRectMake(0,
-                                                                       kNavBarHeight,
-                                                                       screenFrame.size.width,
-                                                                       screenFrame.size.height-kNavBarHeight*2)];
-    [loadingStatus setAutoresizingMask:UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleBottomMargin|UIViewAutoresizingFlexibleRightMargin];
-
-    loadingStatus.tag = kLoadingStatusTag;
-    loadingStatus.numberOfLines = 0;
-    loadingStatus.font = [UIFont fontWithName:@"Helvetica" size:(18.0)];
-    loadingStatus.lineBreakMode = NSLineBreakByWordWrapping;
-    loadingStatus.textAlignment =  NSTextAlignmentLeft;
-    loadingStatus.text = @"Connecting...\n\n\n\n\n";
-    [self.view addSubview:loadingStatus];
     
     if (appDelegate.doPrepopulateBookmarks){
         [self prePopulateBookmarks];

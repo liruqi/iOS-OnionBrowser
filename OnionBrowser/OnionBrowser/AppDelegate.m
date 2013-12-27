@@ -43,7 +43,6 @@
     [_window setRootViewController:appWebView];
     [_window makeKeyAndVisible];
     
-    [self updateTorrc];
 
     sslWhitelistedDomains = [[NSMutableArray alloc] init];
     
@@ -199,45 +198,6 @@
         return 1;
     } else {
         return 2;
-    }
-}
-
-- (void)updateTorrc {
-    NSFileManager *fileManager = [NSFileManager defaultManager];
-    NSString *destTorrc = [[[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"torrc"] relativePath];
-    if ([fileManager fileExistsAtPath:destTorrc]) {
-        [fileManager removeItemAtPath:destTorrc error:NULL];
-    }
-    NSString *sourceTorrc = [[NSBundle mainBundle] pathForResource:@"torrc" ofType:nil];
-    NSError *error = nil;
-    [fileManager copyItemAtPath:sourceTorrc toPath:destTorrc error:&error];
-    if (error != nil) {
-        NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
-        if (![fileManager fileExistsAtPath:sourceTorrc]) {
-            NSLog(@"(Source torrc %@ doesnt exist)", sourceTorrc);
-        }
-    }
-
-    NSFetchRequest *request = [[NSFetchRequest alloc] init];
-    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Bridge" inManagedObjectContext:self.managedObjectContext];
-    [request setEntity:entity];
-
-    error = nil;
-    NSMutableArray *mutableFetchResults = [[self.managedObjectContext executeFetchRequest:request error:&error] mutableCopy];
-    if (mutableFetchResults == nil) {
-
-    } else if ([mutableFetchResults count] > 0) {
-        NSFileHandle *myHandle = [NSFileHandle fileHandleForWritingAtPath:destTorrc];
-        [myHandle seekToEndOfFile];
-        [myHandle writeData:[@"UseBridges 1\n" dataUsingEncoding:NSUTF8StringEncoding]];
-        for (Bridge *bridge in mutableFetchResults) {
-            if ([bridge.conf isEqualToString:@"Tap Here To Edit"]||[bridge.conf isEqualToString:@""]) {
-                // skip
-            } else {
-                [myHandle writeData:[[NSString stringWithFormat:@"bridge %@\n", bridge.conf]
-                                     dataUsingEncoding:NSUTF8StringEncoding]];
-            }
-        }
     }
 }
 
