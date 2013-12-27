@@ -267,7 +267,7 @@ static const Boolean kBackwardButton = NO;
       forControlEvents:UIControlEventEditingDidEndOnExit|UIControlEventEditingDidEnd];
     [navBar addSubview:address];
     _addressField = address;
-    _addressField.enabled = NO;
+    _addressField.enabled = YES;
     [self.view addSubview:navBar];
     // (/navbar)
     
