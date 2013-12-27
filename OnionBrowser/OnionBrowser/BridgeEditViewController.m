@@ -157,7 +157,6 @@
     if (![appDelegate.managedObjectContext save:&error]) {
         NSLog(@"Error updating bridge: %@ %@", error, [error userInfo]);
     }
-    [appDelegate.tor hupTor];
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 @end

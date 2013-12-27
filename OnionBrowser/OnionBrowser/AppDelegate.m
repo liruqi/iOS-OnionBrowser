@@ -6,7 +6,6 @@
 //
 
 #import "AppDelegate.h"
-#include <Openssl/sha.h>
 #import "Bridge.h"
 #include <sys/types.h>
 #include <sys/sysctl.h>
@@ -20,7 +19,7 @@
     sslWhitelistedDomains,
     startUrl,
     appWebView,
-    tor = _tor,
+/*tor = _tor,*/
     window = _window,
     managedObjectContext = __managedObjectContext,
     managedObjectModel = __managedObjectModel,
@@ -45,8 +44,6 @@
     [_window makeKeyAndVisible];
     
     [self updateTorrc];
-    _tor = [[TorController alloc] init];
-    [_tor startTor];
 
     sslWhitelistedDomains = [[NSMutableArray alloc] init];
     
@@ -133,30 +130,15 @@
 #pragma mark App lifecycle
 
 - (void)applicationWillResignActive:(UIApplication *)application {
-    [_tor disableTorCheckLoop];
+    
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
-    if (!_tor.didFirstConnect) {
-        // User is trying to quit app before we have finished initial
-        // connection. This is basically an "abort" situation because
-        // backgrounding while Tor is attempting to connect will almost
-        // definitely result in a hung Tor client. Quit the app entirely,
-        // since this is also a good way to allow user to retry initial
-        // connection if it fails.
-        #ifdef DEBUG
-            NSLog(@"Went to BG before initial connection completed: exiting.");
-        #endif
-        exit(0);
-    } else {
-        [_tor disableTorCheckLoop];
-    }
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     // Don't want to call "activateTorCheckLoop" directly since we
     // want to HUP tor first.
-    [_tor appDidBecomeActive];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
@@ -193,14 +175,8 @@
         return YES;
     }
 
-    if ([_tor didFirstConnect]) {
-        [appWebView loadURL:newUrl];
-    } else {
-        #ifdef DEBUG
-            NSLog(@" -> have not yet connected to tor, deferring load");
-        #endif
-        startUrl = newUrl;
-    }
+    [appWebView loadURL:newUrl];
+    
 	return YES;
 }
 

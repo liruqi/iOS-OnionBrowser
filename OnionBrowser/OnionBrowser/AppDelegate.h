@@ -7,7 +7,6 @@
 
 #import <UIKit/UIKit.h>
 #import "WebViewController.h"
-#import "TorController.h"
 
 #define DNT_HEADER_UNSET 0
 #define DNT_HEADER_CANTRACK 1
@@ -23,7 +22,6 @@
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
-@property (strong, nonatomic) TorController *tor;
 
 @property (strong, nonatomic) UIWindow *window;
 

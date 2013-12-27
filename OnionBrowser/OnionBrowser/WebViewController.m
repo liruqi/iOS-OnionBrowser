@@ -559,26 +559,8 @@ static const Boolean kBackwardButton = NO;
 # pragma mark Options Menu action sheet
 
 - (void)openOptionsMenu {
-    AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
-    if (![appDelegate.tor didFirstConnect]) {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Opening Bridge Configuration"
-                                                        message:@"This configuration is for advanced Tor users. It *may* help if you are having trouble getting past the initial \"Connecting...\" step.\n\nPlease visit the following link in another browser for instructions:\n\nhttp://onionbrowser.com/help/"
-                                                       delegate:nil
-                                              cancelButtonTitle:@"OK"
-                                              otherButtonTitles:nil];
-        [alert show];
-        
-        AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
-        
-        BridgeTableViewController *bridgesVC = [[BridgeTableViewController alloc] initWithStyle:UITableViewStylePlain];
-        [bridgesVC setManagedObjectContext:[appDelegate managedObjectContext]];
-        
-        UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:bridgesVC];
-        navController.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
-        [self presentViewController:navController animated:YES completion:nil];
-    } else {
         [_optionsMenu showFromToolbar:_toolbar];
-    }
+    
 }
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
     if (actionSheet == _optionsMenu) {
@@ -587,7 +569,6 @@ static const Boolean kBackwardButton = NO;
             // New Identity
             ////////////////////////////////////////////////////////
             AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
-            [appDelegate.tor requestNewTorIdentity];
             
             [appDelegate wipeAppData];
             

@@ -23,7 +23,6 @@
 		692E70F717EE3BB10063990F /* Icon-152.png in Resources */ = {isa = PBXBuildFile; fileRef = 692E70F417EE3BB10063990F /* Icon-152.png */; };
 		692E70F817EE3BB10063990F /* Icon-120.png in Resources */ = {isa = PBXBuildFile; fileRef = 692E70F517EE3BB10063990F /* Icon-120.png */; };
 		692E70F917EE3BB10063990F /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 692E70F617EE3BB10063990F /* Icon-76.png */; };
-		6940BD1F15F84C0C00FE74CB /* TorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6940BD1E15F84C0C00FE74CB /* TorController.m */; };
 		6940BD2515F8761900FE74CB /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6940BD2415F8761900FE74CB /* CoreData.framework */; };
 		694F34F1152ECFF20002BCBC /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 694F34E9152ECFF20002BCBC /* Icon.png */; };
 		694F34F2152ECFF20002BCBC /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 694F34EA152ECFF20002BCBC /* Icon-72.png */; };
@@ -42,9 +41,6 @@
 		696EBD8214F7877900B81BC9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 696EBD8014F7877900B81BC9 /* InfoPlist.strings */; };
 		696EBD8414F7877900B81BC9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 696EBD8314F7877900B81BC9 /* main.m */; };
 		696EBD8814F7877900B81BC9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 696EBD8714F7877900B81BC9 /* AppDelegate.m */; };
-		696F9EAB14F8D5A900BC5FDC /* TorWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 696F9EA914F8D51300BC5FDC /* TorWrapper.m */; };
-		696F9EAE14F8D6ED00BC5FDC /* tor_main.c in Sources */ = {isa = PBXBuildFile; fileRef = 696F9EAD14F8D6ED00BC5FDC /* tor_main.c */; };
-		696F9EB014F8DA6900BC5FDC /* torrc in Resources */ = {isa = PBXBuildFile; fileRef = 696F9EAF14F8DA6900BC5FDC /* torrc */; };
 		696F9EB414F8DD6D00BC5FDC /* ULINetSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 696F9EB314F8DD6D00BC5FDC /* ULINetSocket.m */; };
 		696F9EB614F8E21200BC5FDC /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 696F9EB514F8E21200BC5FDC /* CFNetwork.framework */; };
 		697ABCD414FA036E00E1678C /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 697ABCD314FA036E00E1678C /* WebViewController.m */; };
@@ -78,7 +74,6 @@
 		699CCEBD14FA1939004A2F56 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 699CCEBC14FA1939004A2F56 /* libxml2.dylib */; };
 		69C6F6A514FACC3000894495 /* ProxyURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 69C6F6A414FACC3000894495 /* ProxyURLProtocol.m */; };
 		69F3C5FD14FC8739008274C3 /* CKHTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F3C5F814FC8739008274C3 /* CKHTTPConnection.m */; };
-		69F88FCC1500A9D900C7BE98 /* geoip in Resources */ = {isa = PBXBuildFile; fileRef = 69F88FCB1500A9D900C7BE98 /* geoip */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -107,8 +102,6 @@
 		692E70F417EE3BB10063990F /* Icon-152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-152.png"; path = "icon/Icon-152.png"; sourceTree = "<group>"; };
 		692E70F517EE3BB10063990F /* Icon-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-120.png"; path = "icon/Icon-120.png"; sourceTree = "<group>"; };
 		692E70F617EE3BB10063990F /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-76.png"; path = "icon/Icon-76.png"; sourceTree = "<group>"; };
-		6940BD1D15F84C0C00FE74CB /* TorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TorController.h; sourceTree = "<group>"; };
-		6940BD1E15F84C0C00FE74CB /* TorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TorController.m; sourceTree = "<group>"; };
 		6940BD2415F8761900FE74CB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		694F34E9152ECFF20002BCBC /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = icon/Icon.png; sourceTree = "<group>"; };
 		694F34EA152ECFF20002BCBC /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72.png"; path = "icon/Icon-72.png"; sourceTree = "<group>"; };
@@ -133,10 +126,6 @@
 		696EBD8514F7877900B81BC9 /* OnionBrowser-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OnionBrowser-Prefix.pch"; sourceTree = "<group>"; };
 		696EBD8614F7877900B81BC9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		696EBD8714F7877900B81BC9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		696F9EA814F8D51300BC5FDC /* TorWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TorWrapper.h; sourceTree = "<group>"; };
-		696F9EA914F8D51300BC5FDC /* TorWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TorWrapper.m; sourceTree = "<group>"; };
-		696F9EAD14F8D6ED00BC5FDC /* tor_main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tor_main.c; sourceTree = "<group>"; };
-		696F9EAF14F8DA6900BC5FDC /* torrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = torrc; sourceTree = "<group>"; };
 		696F9EB214F8DD6D00BC5FDC /* ULINetSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ULINetSocket.h; sourceTree = "<group>"; };
 		696F9EB314F8DD6D00BC5FDC /* ULINetSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ULINetSocket.m; sourceTree = "<group>"; };
 		696F9EB514F8E21200BC5FDC /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -174,7 +163,6 @@
 		69C6F6A414FACC3000894495 /* ProxyURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProxyURLProtocol.m; path = ../ProxyURLProtocol.m; sourceTree = "<group>"; };
 		69F3C5F714FC8739008274C3 /* CKHTTPConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CKHTTPConnection.h; path = ../ConnectionKit/CKHTTPConnection.h; sourceTree = "<group>"; };
 		69F3C5F814FC8739008274C3 /* CKHTTPConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CKHTTPConnection.m; path = ../ConnectionKit/CKHTTPConnection.m; sourceTree = "<group>"; };
-		69F88FCB1500A9D900C7BE98 /* geoip */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = geoip; path = ../dependencies/share/geoip; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,7 +225,6 @@
 			children = (
 				6940BD2415F8761900FE74CB /* CoreData.framework */,
 				696F9EB114F8DD5300BC5FDC /* ThirdParty */,
-				69BB0A4C14F8D31800E7E909 /* Tor */,
 				696EBD7D14F7877900B81BC9 /* OnionBrowser */,
 				696EBD7614F7877900B81BC9 /* Frameworks */,
 				69737A9B14FCD20600775275 /* Resources */,
@@ -390,20 +377,6 @@
 			name = Bookmarks;
 			sourceTree = "<group>";
 		};
-		69BB0A4C14F8D31800E7E909 /* Tor */ = {
-			isa = PBXGroup;
-			children = (
-				696F9EA814F8D51300BC5FDC /* TorWrapper.h */,
-				696F9EA914F8D51300BC5FDC /* TorWrapper.m */,
-				6940BD1D15F84C0C00FE74CB /* TorController.h */,
-				6940BD1E15F84C0C00FE74CB /* TorController.m */,
-				696F9EAD14F8D6ED00BC5FDC /* tor_main.c */,
-				696F9EAF14F8DA6900BC5FDC /* torrc */,
-				69F88FCB1500A9D900C7BE98 /* geoip */,
-			);
-			name = Tor;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -433,7 +406,7 @@
 				LastUpgradeCheck = 0500;
 				TargetAttributes = {
 					696EBD7214F7877900B81BC9 = {
-						DevelopmentTeam = 68QUP6KP2C;
+						DevelopmentTeam = M54LAUT7S6;
 					};
 				};
 			};
@@ -460,9 +433,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				696EBD8214F7877900B81BC9 /* InfoPlist.strings in Resources */,
-				696F9EB014F8DA6900BC5FDC /* torrc in Resources */,
 				6993EB2E177EB43600F623CE /* Default-7-Portrait.png in Resources */,
-				69F88FCC1500A9D900C7BE98 /* geoip in Resources */,
 				694F34F1152ECFF20002BCBC /* Icon.png in Resources */,
 				694F34F2152ECFF20002BCBC /* Icon-72.png in Resources */,
 				694F34F3152ECFF20002BCBC /* Icon-72@2x.png in Resources */,
@@ -500,10 +471,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				696EBD8414F7877900B81BC9 /* main.m in Sources */,
-				696F9EAB14F8D5A900BC5FDC /* TorWrapper.m in Sources */,
 				691958D61536BA67000423A4 /* Reachability.m in Sources */,
 				696EBD8814F7877900B81BC9 /* AppDelegate.m in Sources */,
-				696F9EAE14F8D6ED00BC5FDC /* tor_main.c in Sources */,
 				696F9EB414F8DD6D00BC5FDC /* ULINetSocket.m in Sources */,
 				697ABCD414FA036E00E1678C /* WebViewController.m in Sources */,
 				69C6F6A514FACC3000894495 /* ProxyURLProtocol.m in Sources */,
@@ -511,7 +480,6 @@
 				692B86AF153CD4CB000806A9 /* NSData+Conversion.m in Sources */,
 				6924C28C155262E2004BE7F9 /* SettingsViewController.m in Sources */,
 				6924C29015526343004BE7F9 /* SettingsTableViewController.m in Sources */,
-				6940BD1F15F84C0C00FE74CB /* TorController.m in Sources */,
 				6963E61615FAB2EC00310E8D /* BookmarkTableViewController.m in Sources */,
 				692B338C15FAF2E500A23DD5 /* BookmarkEditViewController.m in Sources */,
 				69156B5415FD4C6400BC560A /* BridgeTableViewController.m in Sources */,
@@ -578,6 +546,8 @@
 		6945ED4D15FB2E6000DE5EBD /* TestBuilds */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OnionBrowser/OnionBrowser-Prefix.pch";
 				INFOPLIST_FILE = "OnionBrowser/OnionBrowser-Info.plist";
@@ -586,6 +556,7 @@
 					"\"$(SRCROOT)/../dependencies/lib\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = TestBuilds;
@@ -678,6 +649,8 @@
 		696EBD8C14F7877900B81BC9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OnionBrowser/OnionBrowser-Prefix.pch";
 				INFOPLIST_FILE = "OnionBrowser/OnionBrowser-Info.plist";
@@ -686,6 +659,7 @@
 					"\"$(SRCROOT)/../dependencies/lib\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -693,6 +667,8 @@
 		696EBD8D14F7877900B81BC9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OnionBrowser/OnionBrowser-Prefix.pch";
 				INFOPLIST_FILE = "OnionBrowser/OnionBrowser-Info.plist";
@@ -701,6 +677,7 @@
 					"\"$(SRCROOT)/../dependencies/lib\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

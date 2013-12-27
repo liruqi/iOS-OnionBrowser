@@ -186,14 +186,7 @@
     // End pruning.
     
     AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
-    if (![appDelegate.tor didFirstConnect]) {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Please Restart App"
-                                                        message:@"Onion Browser will now close. Please start the app again to retry the Tor connection with the newly-configured bridges.\n\n(If you restart and the app stays stuck at \"Connecting...\", please come back and double-check your bridge configuration or remove your bridges.)"
-                                                       delegate:self
-                                              cancelButtonTitle:@"OK"
-                                              otherButtonTitles:nil];
-        [alert show];
-    } else {
+    {
         if ([bridgeArray count] > 0) {
             NSString *pluralize = @" is";
             if ([bridgeArray count] > 1) {
